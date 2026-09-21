@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduIA Inclusiva - História</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>EduIA Inclusiva</h1>
+    <p>Aprenda História do seu jeito</p>
+</header>
+
+<main>
+
+    <!-- TELA INICIAL -->
+    <section id="inicio" class="tela ativa">
+
+        <div class="card centralizado">
+
+            <h2>📚 Bem-vindo ao EduIA Inclusiva</h2>
+
+            <p>
+                Esta plataforma foi criada para apresentar
+                conteúdos de História de diferentes maneiras,
+                considerando as preferências de aprendizagem
+                de cada estudante.
+            </p>
+
+            <p>
+                Primeiro você responderá algumas perguntas.
+                Depois o sistema utilizará suas escolhas para
+                organizar a experiência de aprendizagem.
+            </p>
+
+            <div class="aviso">
+                <strong>Como funciona?</strong>
+                <p>
+                    Em algumas perguntas você poderá escolher
+                    até duas opções.
+                </p>
+            </div>
+
+            <button id="btnComecar">
+                Começar
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTIONÁRIO -->
+    <section id="questionario" class="tela">
+
+        <div class="card">
+
+            <h2>🧩 Conhecendo sua forma de aprender</h2>
+
+            <p>
+                Escolha até duas opções em cada pergunta.
+            </p>
+
+            <div class="progresso">
+                <div id="barraProgresso"></div>
+            </div>
+
+            <h3 id="tituloPergunta"></h3>
+
+            <div id="opcoesPergunta" class="opcoes"></div>
+
+            <p id="contadorPergunta"></p>
+
+            <button id="btnVoltarPergunta" class="secundario">
+                ← Voltar
+            </button>
+
+            <button id="btnProximaPergunta">
+                Próxima →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- AULA -->
+    <section id="aula" class="tela">
+
+        <div class="card">
+
+            <button id="btnVoltarInicio" class="secundario">
+                ← Voltar ao início
+            </button>
+
+            <h2 id="tituloAula">
+                Aula de História
+            </h2>
+
+            <div id="preferencias"></div>
+
+            <div class="controles">
+
+                <span>Tamanho do texto:</span>
+
+                <button id="btnMenor">A−</button>
+
+                <button id="btnNormal">A</button>
+
+                <button id="btnMaior">A+</button>
+
+                <button id="btnAudio">🔊 Ouvir</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- 1. INTRODUÇÃO -->
+
+        <section class="card conteudo">
+
+            <h2>1. Introdução</h2>
+
+            <p>
+                A Revolução Francesa foi um processo político
+                e social iniciado em 1789 na França.
+            </p>
+
+            <p>
+                O processo revolucionário esteve relacionado
+                a problemas econômicos, desigualdades sociais,
+                conflitos políticos e críticas aos privilégios
+                existentes na sociedade francesa.
+            </p>
+
+            <p>
+                Durante a Revolução ocorreram importantes
+                transformações políticas e sociais que
+                influenciaram outros acontecimentos históricos.
+            </p>
+
+        </section>
+
+
+        <!-- 2. CONTEXTO -->
+
+        <section class="card conteudo">
+
+            <h2>2. Contexto histórico</h2>
+
+            <p>
+                Antes da Revolução, a sociedade francesa era
+                organizada em diferentes grupos sociais.
+            </p>
+
+            <p>
+                O clero e a nobreza possuíam privilégios,
+                enquanto o chamado Terceiro Estado reunia
+                grande parte da população.
+            </p>
+
+            <p>
+                A França também enfrentava dificuldades
+                financeiras. O Estado possuía dívidas e
+                havia problemas relacionados aos preços dos
+                alimentos e aos impostos.
+            </p>
+
+            <div class="imagem-box">
+
+                <div class="imagem-simbolica">
+                    👑 &nbsp; ⛪ &nbsp; 👨‍🌾
+                </div>
+
+                <h3>Representação da sociedade francesa</h3>
+
+                <p>
+                    Esta ilustração representa de forma didática
+                    diferentes grupos existentes na sociedade
+                    francesa antes da Revolução.
+                </p>
+
+                <div class="fonte">
+                    <strong>Fonte:</strong> ilustração didática
+                    original criada para o protótipo EduIA Inclusiva.
+                    <br>
+                    <strong>Licença:</strong> material original
+                    produzido para o projeto.
+                </div>
+
+            </div>
+
+            <div class="questao">
+
+                <h3>🔎 Observe a imagem</h3>
+
+                <p>
+                    O que a imagem procura representar?
+                </p>
+
+                <button class="resposta-imagem correta">
+                    A divisão social da sociedade francesa
+                </button>
+
+                <button class="resposta-imagem">
+                    Uma competição esportiva
+                </button>
+
+                <div id="resultadoImagem"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3. ACONTECIMENTOS -->
+
+        <section class="card conteudo">
+
+            <h2>3. Principais acontecimentos</h2>
+
+            <p>
+                O ano de 1789 marcou o início da Revolução
+                Francesa. Diversos acontecimentos ocorreram
+                durante o processo.
+            </p>
+
+            <ul>
+                <li>Reunião dos Estados Gerais;</li>
+                <li>formação da Assembleia Nacional;</li>
+                <li>tomada da Bastilha;</li>
+                <li>Declaração dos Direitos do Homem e do Cidadão;</li>
+                <li>mudanças na organização política francesa.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- QUADRINHOS -->
+
+        <section class="card">
+
+            <h2>💬 Quadrinhos didáticos</h2>
+
+            <p>
+                Os quadrinhos abaixo explicam os acontecimentos
+                em uma sequência visual.
+            </p>
+
+            <div class="quadrinhos">
+
+
+                <div class="quadro">
+
+                    <span class="numero">1</span>
+
+                    <h3>A sociedade</h3>
+
+                    <div class="desenho">👑</div>
+
+                    <div class="fala">
+                        <strong>Narrador:</strong>
+                        <p>
+                            Antes da Revolução, a sociedade francesa
+                            era dividida em diferentes grupos.
+                        </p>
+                    </div>
+
+                    <div class="fala">
+                        <strong>Personagem:</strong>
+                        <p>
+                            Alguns grupos possuíam privilégios.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="quadro">
+
+                    <span class="numero">2</span>
+
+                    <h3>O Terceiro Estado</h3>
+
+                    <div class="desenho">👨‍🌾</div>
+
+                    <div class="fala">
+                        <strong>Narrador:</strong>
+                        <p>
+                            Grande parte da população fazia parte
+                            do Terceiro Estado.
+                        </p>
+                    </div>
+
+                    <div class="fala">
+                        <strong>Personagem:</strong>
+                        <p>
+                            Muitos enfrentavam impostos e
+                            dificuldades econômicas.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="quadro">
+
+                    <span class="numero">3</span>
+
+                    <h3>A crise</h3>
+
+                    <div class="desenho">📉</div>
+
+                    <div class="fala">
+                        <strong>Narrador:</strong>
+                        <p>
+                            A França enfrentava uma grave crise
+                            financeira.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="quadro">
+
+                    <span class="numero">4</span>
+
+                    <h3>O ano de 1789</h3>
+
+                    <div class="desenho">📅</div>
+
+                    <div class="fala">
+                        <strong>Narrador:</strong>
+                        <p>
+                            Em 1789, a crise política e social
+                            chegou a um momento decisivo.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="quadro">
+
+                    <span class="numero">5</span>
+
+                    <h3>A Bastilha</h3>
+
+                    <div class="desenho">🏰</div>
+
+                    <div class="fala">
+                        <strong>Narrador:</strong>
+                        <p>
+                            Em 14 de julho de 1789, a Bastilha
+                            foi tomada.
+                        </p>
+                    </div>
+
+                    <div class="fala">
+                        <strong>Importante:</strong>
+                        <p>
+                            O acontecimento tornou-se um dos
+                            símbolos da Revolução.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="quadro">
+
+                    <span class="numero">6</span>
+
+                    <h3>Novas ideias</h3>
+
+                    <div class="desenho">📜</div>
+
+                    <div class="fala">
+                        <strong>Narrador:</strong>
+                        <p>
+                            Novas ideias políticas ganharam força
+                            durante o processo revolucionário.
+                        </p>
+                    </div>
+
+                    <div class="fala">
+                        <strong>Documento:</strong>
+                        <p>
+                            A Declaração dos Direitos do Homem
+                            e do Cidadão foi aprovada em 1789.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4. PERSONAGENS -->
+
+        <section class="card conteudo">
+
+            <h2>4. Personagens e grupos importantes</h2>
+
+            <h3>👑 Nobreza</h3>
+
+            <p>
+                Grupo social que possuía privilégios dentro
+                da sociedade do Antigo Regime.
+            </p>
+
+            <h3>⛪ Clero</h3>
+
+            <p>
+                Grupo ligado à Igreja Católica que possuía
+                privilégios sociais.
+            </p>
+
+            <h3>👨‍🌾 Terceiro Estado</h3>
+
+            <p>
+                Reunia grande parte da população francesa.
+            </p>
+
+            <h3>📚 Burguesia</h3>
+
+            <p>
+                Parte da burguesia participou das transformações
+                políticas e defendeu mudanças na sociedade.
+            </p>
+
+        </section>
+
+
+        <!-- 5. CONSEQUÊNCIAS -->
+
+        <section class="card conteudo">
+
+            <h2>5. Consequências</h2>
+
+            <p>
+                A Revolução Francesa provocou mudanças
+                importantes na política e na sociedade.
+            </p>
+
+            <ul>
+                <li>enfraquecimento das estruturas do Antigo Regime;</li>
+                <li>mudanças na organização política francesa;</li>
+                <li>divulgação de ideias relacionadas a direitos;</li>
+                <li>influência sobre outros movimentos políticos.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- 6. CURIOSIDADES -->
+
+        <section class="card conteudo">
+
+            <h2>6. Curiosidades</h2>
+
+            <p>📅 A tomada da Bastilha ocorreu em 14 de julho de 1789.</p>
+
+            <p>
+                📜 A Declaração dos Direitos do Homem e do Cidadão
+                foi aprovada em 1789.
+            </p>
+
+            <p>
+                🇫🇷 O dia 14 de julho é atualmente o feriado
+                nacional da França.
+            </p>
+
+        </section>
+
+
+        <!-- 7. RESUMO -->
+
+        <section class="card conteudo">
+
+            <h2>7. Resumo simplificado</h2>
+
+            <div class="resumo">
+
+                <p>
+                    A França enfrentava problemas econômicos
+                    e sociais antes de 1789.
+                </p>
+
+                <p>
+                    A sociedade possuía diferentes grupos e
+                    privilégios.
+                </p>
+
+                <p>
+                    Em 1789 começou a Revolução Francesa.
+                </p>
+
+                <p>
+                    A tomada da Bastilha tornou-se um dos
+                    símbolos da Revolução.
+                </p>
+
+                <p>
+                    O processo provocou importantes mudanças
+                    políticas e sociais.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8. COMPREENSÃO -->
+
+        <section class="card conteudo">
+
+            <h2>8. Perguntas de compreensão</h2>
+
+            <div class="questao">
+
+                <p>
+                    <strong>
+                        1. Em que ano começou a Revolução Francesa?
+                    </strong>
+                </p>
+
+                <button class="compreensao" data-correta="sim">
+                    1789
+                </button>
+
+                <button class="compreensao">
+                    1500
+                </button>
+
+                <button class="compreensao">
+                    1914
+                </button>
+
+                <div class="feedback"></div>
+
+            </div>
+
+
+            <div class="questao">
+
+                <p>
+                    <strong>
+                        2. O que aconteceu com a Bastilha?
+                    </strong>
+                </p>
+
+                <button class="compreensao" data-correta="sim">
+                    Foi tomada durante a Revolução.
+                </button>
+
+                <button class="compreensao">
+                    Foi transformada em uma escola.
+                </button>
+
+                <button class="compreensao">
+                    Tornou-se um palácio.
+                </button>
+
+                <div class="feedback"></div>
+
+            </div>
+
+
+            <div class="questao">
+
+                <p>
+                    <strong>
+                        3. Qual documento foi aprovado em 1789?
+                    </strong>
+                </p>
+
+                <button class="compreensao" data-correta="sim">
+                    Declaração dos Direitos do Homem e do Cidadão
+                </button>
+
+                <button class="compreensao">
+                    Tratado de Versalhes
+                </button>
+
+                <button class="compreensao">
+                    Carta das Nações Unidas
+                </button>
+
+                <div class="feedback"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9. QUIZ -->
+
+        <section class="card conteudo">
+
+            <h2>9. 🏆 Quiz final</h2>
+
+            <p>
+                Agora responda às perguntas sobre toda a aula.
+            </p>
+
+
+            <div class="quiz-pergunta">
+
+                <p>
+                    <strong>
+                        1. Em que ano começou a Revolução Francesa?
+                    </strong>
+                </p>
+
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    1789
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    1822
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    1889
+                </label>
+
+            </div>
+
+
+            <div class="quiz-pergunta">
+
+                <p>
+                    <strong>
+                        2. Qual acontecimento ocorreu em 14 de julho
+                        de 1789?
+                    </strong>
+                </p>
+
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    Tomada da Bastilha
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    Coroação de Napoleão
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    Independência dos Estados Unidos
+                </label>
+
+            </div>
+
+
+            <div class="quiz-pergunta">
+
+                <p>
+                    <strong>
+                        3. Qual grupo reunia grande parte da população?
+                    </strong>
+                </p>
+
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Terceiro Estado
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Apenas o clero
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Apenas a nobreza
+                </label>
+
+            </div>
+
+
+            <div class="quiz-pergunta">
+
+                <p>
+                    <strong>
+                        4. Qual documento foi aprovado em 1789?
+                    </strong>
+                </p>
+
+                <label>
+                    <input type="radio" name="q4" value="a">
+                    Declaração dos Direitos do Homem e do Cidadão
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="b">
+                    Tratado de Tordesilhas
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="c">
+                    Constituição brasileira de 1988
+                </label>
+
+            </div>
+
+
+            <div class="quiz-pergunta">
+
+                <p>
+                    <strong>
+                        5. Uma consequência da Revolução foi:
+                    </strong>
+                </p>
+
+                <label>
+                    <input type="radio" name="q5" value="a">
+                    Mudanças políticas e sociais
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="b">
+                    Fim da escrita
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="c">
+                    Desaparecimento da Europa
+                </label>
+
+            </div>
+
+
+            <button id="btnResultadoQuiz">
+                Ver meu resultado
+            </button>
+
+            <div id="resultadoQuiz"></div>
+
+        </section>
+
+
+        <!-- FONTES -->
+
+        <section class="card">
+
+            <h2>📚 Fontes e créditos das imagens</h2>
+
+            <p>
+                Para a versão final do projeto, as imagens históricas
+                reais devem ser selecionadas verificando a licença
+                específica de cada arquivo.
+            </p>
+
+            <div class="fonte">
+
+                <strong>Wikimedia Commons</strong>
+
+                <p>
+                    Acervo com imagens em domínio público e imagens
+                    disponibilizadas sob diferentes licenças livres.
+                </p>
+
+            </div>
+
+            <div class="fonte">
+
+                <strong>Library of Congress</strong>
+
+                <p>
+                    Possui coleções históricas disponibilizadas para
+                    uso conforme as condições indicadas em cada item.
+                </p>
+
+            </div>
+
+            <div class="fonte">
+
+                <strong>Europeana</strong>
+
+                <p>
+                    Reúne materiais culturais de instituições
+                    europeias e informa os direitos associados
+                    aos itens.
+                </p>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
