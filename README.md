@@ -75,6 +75,7 @@ EduIA-InclusivaV2/
 ├── index.html    # Estrutura das 3 telas: Início, Questionário e Aula
 ├── script.js     # Lógica do questionário, navegação, áudio e quiz
 ├── style.css     # Estilização, temas e responsividade
+├── .gitignore    # Arquivos ignorados pelo git (SO/editor)
 ├── LICENSE       # Licença MIT
 └── README.md     # Este arquivo
 ```
